@@ -237,6 +237,7 @@ MonoBehaviour:
   transformA: {fileID: 2056004880}
   transformB: {fileID: 2131453244}
   cam: {fileID: 135505746}
+  aud: {fileID: 504899346}
 --- !u!1 &83827869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreHeight: 0
+  pipe: {fileID: 7284185176384127673, guid: a1905be7cc0704144ab7a8799def7e7e, type: 3}
 --- !u!4 &1498019172
 Transform:
   m_ObjectHideFlags: 0
