@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &43629163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 43629162}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6a771fc6cde3b745816c61c2d0af8b3, type: 3}
+  m_Script: {fileID: 11500000, guid: aefbf7ae6e1f8544a8cf6922ff916a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   test: 0
@@ -229,9 +229,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43629162}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47314b564786eb488e7afabab493c00, type: 3}
+  m_Script: {fileID: 11500000, guid: dd237ac53804d0341ad728c5eb5c1de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transformA: {fileID: 2056004880}
@@ -319,7 +319,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 83827872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498019171}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &83827872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +594,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -905,7 +916,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 576267413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498019171}
+        m_MethodName: Replay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &576267413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,6 +1051,7 @@ GameObject:
   - component: {fileID: 1032559930}
   - component: {fileID: 1032559929}
   - component: {fileID: 1032559928}
+  - component: {fileID: 1032559932}
   m_Layer: 5
   m_Name: "\u756B\u5E03"
   m_TagString: Untagged
@@ -1117,6 +1140,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1032559932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032559927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3548923c5cb8d74d8cf3af641f8862a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 10
+  b: 3
+  c: 10
+  d: 10
+  score: 50
+  num1: 90
+  num2: 10
+  boolA: 1
+  boolB: 0
+  hp: 100
+  prop: 10
 --- !u!1 &1118505195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1296395351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1303,7 +1349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1498019171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,9 +1364,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreHeight: 0
-  pipe: {fileID: 7284185176384127673, guid: a1905be7cc0704144ab7a8799def7e7e, type: 3}
+  pipe: {fileID: 3379918633709527166, guid: 932201f90fa98864ea68927e72f30066, type: 3}
   goFinal: {fileID: 466136645}
-  textScroe: {fileID: 1296395352}
+  textScore: {fileID: 1296395352}
+  textBest: {fileID: 2059024806}
 --- !u!4 &1498019172
 Transform:
   m_ObjectHideFlags: 0
@@ -1397,7 +1444,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 50, y: 0.32}
+  m_Size: {x: 200, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1411,7 +1458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558720828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: -4.42, z: 0}
+  m_LocalPosition: {x: 405, y: -4.42, z: 0}
   m_LocalScale: {x: 4.1240153, y: 4.1240153, z: 4.1240153}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1449,13 +1496,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 50, y: 0.32}
+    newSize: {x: 200, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 0.28}
+  m_Size: {x: 200, y: 0.28}
   m_EdgeRadius: 0
 --- !u!1 &2056004878
 GameObject:
@@ -1731,16 +1778,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: 300
-  angle: 10
+  angle: 7
   dead: 0
   r2d: {fileID: 2131453246}
   gm: {fileID: 1498019171}
   goScore: {fileID: 1296395350}
   goGM: {fileID: 1498019170}
-  aud: {fileID: 0}
-  soundJump: {fileID: 8300000, guid: f827ca3cbf2f7874e9b1ae0e645524a0, type: 3}
-  soundHit: {fileID: 0}
-  soundAdd: {fileID: 0}
+  aud: {fileID: 2131453248}
+  soundJump: {fileID: 8300000, guid: f154cfa148e8ab840893b6edeeb486d7, type: 3}
+  soundHit: {fileID: 8300000, guid: c73f9ee631b43d44f831d73aed2374cb, type: 3}
+  soundAdd: {fileID: 8300000, guid: 92522e1d754b0ec4ca23192b3e44b666, type: 3}
 --- !u!50 &2131453246
 Rigidbody2D:
   serializedVersion: 4
